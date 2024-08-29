@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base de Dados das Oficinas</title>
+    <link rel="stylesheet" type="text/css" href="../css/base-dados.css">
+</head>
+<!-- base de dados que deve ser inputada pelas oficinas da porto seguro, 
+ com isso garantimos que a base de valores das peças estão corretas e 
+ garantirá acertividade no auto-orçamento -->
+<body>
+    <header>
+        <h1>Base de Dados das Oficinas</h1>
+    </header>
+
+    <main>
+        <div id="container">
+            <h2>Registro de Peças e Valores</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome da Oficina</th>
+                        <th>Peça</th>
+                        <th>Descrição</th>
+                        <th>Valor (R$)</th>
+                        <th>Data da Compra</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody id="tabela-dados">
+                    <!-- Os registros das peças serão inseridos aqui -->
+                </tbody>
+            </table>
+            <form id="cadastro" method="POST" action="/salvar-peca">
+                <h3>Adicionar Novo Registro</h3>
+                <div class="input-group">
+                    <label for="nome_oficina">Nome da Oficina:</label>
+                    <input type="text" id="nome_oficina" name="nome_oficina" required>
+                </div>
+                <div class="input-group">
+                    <label for="peca">Peça:</label>
+                    <input type="text" id="peca" name="peca" required>
+                </div>
+                <div class="input-group">
+                    <label for="descricao">Descrição:</label>
+                    <input type="text" id="descricao" name="descricao" required>
+                </div>
+                <div class="input-group">
+                    <label for="valor">Valor (R$):</label>
+                    <input type="number" id="valor" name="valor" step="0.01" required>
+                </div>
+                <div class="input-group">
+                    <label for="data_compra">Data da Compra:</label>
+                    <input type="date" id="data_compra" name="data_compra" required>
+                </div>
+                <div class="button">
+                    <button type="submit" id="save-button" class="button">Adicionar à Base</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2024 Porto Auto Check</p>
+    </footer>
+
+    <script src="../javaScript/script.js"></script>
+</body>
+
+</html>
