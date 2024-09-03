@@ -1,48 +1,41 @@
-import React, { useState } from 'react';
-import Button from '../components/Button/Button';
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import styles from '../styles/pages/Login.module.css';
+import loginImage from '../components/img/Logo_PortoSeguro.svg'; // Ajuste o caminho conforme necessário
+import Button from '../components/Button/Button';
+import Form from '../components/Form/Form';
 
 const Login: React.FC = () => {
-  const [username, setUsername] = useState('');
-  const [password, setPassword] = useState('');
+  const navigate = useNavigate();
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (username === 'admin' && password === 'password') {
-      alert('Login bem-sucedido!');
-    } else {
-      alert('Credenciais inválidas');
-    }
+  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    // Lógica para autenticação aqui, se necessário
+    navigate('/menu'); // Redireciona para a página de menu após o login
   };
 
   return (
     <div className={styles.container}>
-      <h1>Login</h1>
-      <form onSubmit={handleSubmit}>
-        <div className={styles.inputGroup}>
-          <label htmlFor="username">Usuário:</label>
-          <input
-            type="text"
-            id="username"
-            name="username"
-            value={username}
-            onChange={(e) => setUsername(e.target.value)}
-            required
-          />
-        </div>
-        <div className={styles.inputGroup}>
-          <label htmlFor="password">Senha:</label>
-          <input
-            type="password"
-            id="password"
-            name="password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            required
-          />
-        </div>
-        <Button type="submit">Entrar</Button>
-      </form>
+      <header className={styles.header}>
+        <img src={loginImage} alt="Login" className={styles.loginImage} />
+      </header>
+      <main className={styles.main}>
+        <Form onSubmit={handleSubmit}>
+          <div className={styles.inputGroup}>
+            <label htmlFor="username">Usuário:</label>
+            <input type="text" id="username" name="username" />
+          </div>
+          <div className={styles.inputGroup}>
+            <label htmlFor="password">Senha:</label>
+            <input type="password" id="password" name="password" />
+          </div>
+          <div className={styles.buttonGroup}>
+            <Button type="submit">Entrar</Button>
+            <Button type="button" onClick={() => alert('Registrar')}>Registrar</Button>
+            <Button type="button" onClick={() => alert('Recuperar senha')}>Recuperar Senha</Button>
+          </div>
+        </Form>
+      </main>
     </div>
   );
 };

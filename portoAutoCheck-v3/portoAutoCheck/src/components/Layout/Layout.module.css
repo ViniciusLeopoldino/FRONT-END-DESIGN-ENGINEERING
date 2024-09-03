@@ -1,0 +1,10 @@
+.container {
+    display: flex; /* Alinha o menu lateral e o conteúdo principal horizontalmente */
+  }
+  
+  .mainContent {
+    margin-left: 250px; /* Compensa a largura do menu lateral */
+    padding: 20px;
+    flex: 1; /* Faz com que o conteúdo principal ocupe o espaço restante */
+  }
+  

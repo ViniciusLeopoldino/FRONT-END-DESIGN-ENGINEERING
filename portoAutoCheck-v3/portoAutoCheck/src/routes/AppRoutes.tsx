@@ -1,8 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Login from '../pages/Login'
-import Registro from '../pages/Registro';
-import ResetSenha from '../pages/ResetSenha';
+import Layout from '../components/MenuLateral/MenuLateral'; // Ajuste o caminho conforme necessário
+import Login from '../pages/Login';
 import Menu from '../pages/Menu';
 import Perfil from '../pages/Perfil';
 import PortoAutoCheck from '../pages/PortoAutoCheck';
@@ -16,15 +15,15 @@ const AppRoutes: React.FC = () => {
     <Router>
       <Routes>
         <Route path="/" element={<Login />} />
-        <Route path="/registro" element={<Registro />} />
-        <Route path="/reset-senha" element={<ResetSenha />} />
-        <Route path="/menu" element={<Menu />} />
-        <Route path="/perfil" element={<Perfil />} />
-        <Route path="/porto-auto-check" element={<PortoAutoCheck />} />
-        <Route path="/manutencao" element={<Manutencao />} />
-        <Route path="/oficina-proxima" element={<OficinaProxima />} />
-        <Route path="/fale-conosco" element={<FaleConosco />} />
-        <Route path="/integrantes" element={<IntegrantesPage />} />
+        <Route element={<Layout />}>
+          <Route path="/menu" element={<Menu />} />
+          <Route path="/perfil" element={<Perfil />} />
+          <Route path="/porto-auto-check" element={<PortoAutoCheck />} />
+          <Route path="/manutencao" element={<Manutencao />} />
+          <Route path="/oficina-proxima" element={<OficinaProxima />} />
+          <Route path="/fale-conosco" element={<FaleConosco />} />
+          <Route path="/integrantes" element={<IntegrantesPage />} />
+        </Route>
       </Routes>
     </Router>
   );

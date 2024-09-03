@@ -1,13 +1,15 @@
-import React, { ReactNode } from 'react';
+import React from 'react';
 import styles from './Form.module.css';
 
 interface FormProps {
-  children: ReactNode; // Define o tipo dos filhos
+  onSubmit: (event: React.FormEvent<HTMLFormElement>) => void;
+  children: React.ReactNode;
 }
 
-const Form: React.FC<FormProps> = ({ children }) => {
-  return <form className={styles.form}>{children}</form>;
+const Form: React.FC<FormProps> = ({ onSubmit, children }) => {
+  return <form className={styles.form} onSubmit={onSubmit}>{children}</form>;
 };
 
 export default Form;
+
 

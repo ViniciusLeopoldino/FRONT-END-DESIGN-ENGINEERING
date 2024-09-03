@@ -13,3 +13,6 @@ html, body {
     margin: 0;
   }
   
+  input, button {
+    background-color:#ccc;
+  }
