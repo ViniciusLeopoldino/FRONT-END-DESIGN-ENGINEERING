@@ -1,0 +1,52 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Centralizar verticalmente */
+    background-color: #f4f4f4; /* Cor de fundo clara */
+    padding: 20px;
+  }
+  
+  .inputGroup {
+    margin-bottom: 15px;
+    width: 100%;
+    max-width: 400px; /* Limitar largura para melhor aparência */
+  }
+  
+  .inputGroup label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .inputGroup input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #30C5FF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    width: 100%;
+    max-width: 400px; /* Limitar largura do botão */
+  }
+  
+  button:hover {
+    background-color: #1a8cff; /* Cor de fundo do botão ao passar o mouse */
+  }
+  
+  button:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5); /* Adicionar uma borda de foco para acessibilidade */
+  }
+  
