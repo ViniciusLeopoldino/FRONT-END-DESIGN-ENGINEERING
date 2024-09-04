@@ -3,8 +3,10 @@
   }
   
   .mainContent {
+    flex-grow: 1; /* Faz com que o conteúdo principal ocupe o espaço restante */
     margin-left: 250px; /* Compensa a largura do menu lateral */
-    padding: 20px;
+    padding: 20px; /* Espaçamento interno */
     flex: 1; /* Faz com que o conteúdo principal ocupe o espaço restante */
+    overflow: y; /* Adiciona uma barra de rolagem vertical */
   }
   

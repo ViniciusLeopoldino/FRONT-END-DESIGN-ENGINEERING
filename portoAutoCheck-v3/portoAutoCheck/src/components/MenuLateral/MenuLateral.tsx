@@ -1,12 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import styles from '../MenuLateral/MenuLateral.module.css'; // Ajuste o caminho conforme necessário
+import styles from '../MenuLateral/MenuLateral.module.css'; 
+import logo from '../img/Logo_PortoSeguro_menu.svg'; 
 
 const MenuLateral: React.FC = () => {
   return (
     <nav className={styles.menuLateral}>
       <div className={styles.logo}>
-        <img src="../img/Logo_PortoSeguro_menu.svg" alt="Logo" />
+        <img src={logo} alt="Logo" />
       </div>
       <ul className={styles.menuItems}>
         <li><Link to="/menu">Menu</Link></li>
@@ -15,6 +16,7 @@ const MenuLateral: React.FC = () => {
         <li><Link to="/oficina-proxima">Oficina Próxima</Link></li>
         <li><Link to="/fale-conosco">Fale Conosco</Link></li>
         <li><Link to="/integrantes">Integrantes</Link></li>
+        <li><Link to="/">Sair</Link></li>
       </ul>
     </nav>
   );

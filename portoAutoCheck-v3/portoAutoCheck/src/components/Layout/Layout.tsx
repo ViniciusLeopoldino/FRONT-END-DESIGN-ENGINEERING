@@ -1,9 +1,9 @@
-import React, { ReactNode } from 'react';
-import MenuLateral from '../MenuLateral/MenuLateral'; // Ajuste o caminho conforme necessário
-import styles from './Layout.module.css'; // CSS para layout principal
+import React from 'react';
+import MenuLateral from '../MenuLateral/MenuLateral'; 
+import styles from './Layout.module.css'; 
 
 interface LayoutProps {
-  children: ReactNode; // Declara que o componente pode receber filhos
+  children: React.ReactNode; 
 }
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
