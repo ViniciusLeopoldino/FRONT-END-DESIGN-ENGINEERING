@@ -24,18 +24,18 @@
   list-style-type: none; /* Remove a marcação dos itens */
   padding: 0; /* Remove o espaçamento interno */
   margin-bottom: auto; /* Empurra os itens para a parte superior */
-
+  margin-top: 50px; /* Espaço acima dos itens */
 }
 
 /* Estilo dos links do menu */
 .menuItems li {
-  margin-bottom: 15px; /* Espaçamento entre os itens */
+  margin-bottom: 25px; /* Espaçamento entre os itens */
 }
 
 .menuItems a {
   color: #fff; /* Cor do texto dos links */
   text-decoration: none; /* Remove a decoração padrão dos links */
-  font-size: 18px; /* Tamanho do texto */
+  font-size: 25px; /* Tamanho do texto */
 }
 
 .menuItems a:hover {

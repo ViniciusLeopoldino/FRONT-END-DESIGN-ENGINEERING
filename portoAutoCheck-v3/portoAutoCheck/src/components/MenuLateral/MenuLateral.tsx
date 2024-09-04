@@ -10,7 +10,6 @@ const MenuLateral: React.FC = () => {
         <img src={logo} alt="Logo" />
       </div>
       <ul className={styles.menuItems}>
-        <li><Link to="/menu">Menu</Link></li>
         <li><Link to="/perfil">Perfil</Link></li>
         <li><Link to="/manutencao">Manutenção</Link></li>
         <li><Link to="/oficina-proxima">Oficina Próxima</Link></li>
