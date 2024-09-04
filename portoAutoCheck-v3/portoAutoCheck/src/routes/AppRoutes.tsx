@@ -8,6 +8,7 @@ import Manutencao from '../pages/Manutencao';
 import OficinaProxima from '../pages/OficinaProxima';
 import FaleConosco from '../pages/FaleConosco';
 import IntegrantesPage from '../pages/Integrantes';
+import ResetSenha from '../pages/ResetSenha';
 
 const AppRoutes: React.FC = () => {
   return (
@@ -20,6 +21,7 @@ const AppRoutes: React.FC = () => {
         <Route path="/oficina-proxima" element={<Layout><OficinaProxima /></Layout>} />
         <Route path="/fale-conosco" element={<Layout><FaleConosco /></Layout>} />
         <Route path="/integrantes" element={<Layout><IntegrantesPage /></Layout>} />
+        <Route path="/ResetSenha" element={<ResetSenha />} />
       </Routes>
     </Router>
   );
