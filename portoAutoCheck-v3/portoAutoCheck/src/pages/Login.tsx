@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import styles from '../styles/pages/Login.module.css';
-import loginImage from '../components/img/Logo_PortoSeguro.svg'; // Ajuste o caminho conforme necessário
+import loginImage from '../components/img/Logo_PortoSeguro.svg'; 
 import Button from '../components/Button/Button';
 import Form from '../components/Form/Form';
 
@@ -12,6 +12,14 @@ const Login: React.FC = () => {
     event.preventDefault();
     // Lógica para autenticação aqui, se necessário
     navigate('/menu'); // Redireciona para a página de menu após o login
+  };
+
+  const handleRegister = () => {
+    navigate('/Registro'); // Redireciona para a página de registro
+  };
+
+  const handleResetPassword = () => {
+    navigate('/ResetSenha'); // Redireciona para a página de recuperação de senha
   };
 
   return (
@@ -31,8 +39,9 @@ const Login: React.FC = () => {
           </div>
           <div className={styles.buttonGroup}>
             <Button type="submit">Entrar</Button>
-            <Button type="button" onClick={() => alert('Registrar')}>Registrar</Button>
-            <Button type="button" onClick={() => alert('Recuperar senha')}>Recuperar Senha</Button>
+            <Button type="button" onClick={handleRegister}>Registrar</Button>
+            <br />
+            <Button type="button" onClick={handleResetPassword}>Recuperar Senha</Button>
           </div>
         </Form>
       </main>

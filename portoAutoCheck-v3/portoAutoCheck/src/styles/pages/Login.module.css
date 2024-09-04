@@ -14,45 +14,48 @@ html {
 }
 
 body {
-  font: caption;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  background-image: linear-gradient(rgb(255, 255, 255), #30C5FF);
+  font: caption; /* Alterado para fonte caption */
+  margin: 0; /* Removido margin */
+  padding: 0; /* Removido padding */
+  display: flex; /* Altera o display para flex */
+  flex-direction: column; /* Alterado para column */
+  min-height: 100vh; /* Alterado para ocupar 100% da altura da viewport */
+  background-image: linear-gradient(rgb(255, 255, 255), #30C5FF); /* Alterado para gradiente */
   align-items: center; /* Alinha itens horizontalmente no centro */
   justify-content: center; /* Alinha itens verticalmente no centro */
 }
 
 .container {
-  text-align: center;
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 50px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.555);
-  width: 90%; /* Alterado para ocupar 90% da largura da viewport */
-  max-width: 500px;
-  margin: auto;
+  text-align: center; /* Centraliza o texto */
+  background-color: #fff; /* Alterado para branco */
+  padding: 50px; /* altera a distância interna do container */
+  border-radius: 50px; /* Altera o raio da borda do container */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.555); /* Adiciona sombra ao container */
+  width: 100%; /* Alterado para ocupar 90% da largura da viewport */
+  max-width: 500px; /* Adicionado limite de largura */
+  margin: auto; /* Centraliza o container */
 }
 
 .inputGroup {
-  margin-bottom: 20px;
+  margin-bottom: 30px; /* altera a distância entre os elementos */
+  width: 100%; /* altera a largura do input */
 }
 
 .inputGroup label {
-  text-align: left;
-  display: block;
-  margin-bottom: 10px;
+  text-align: left; /* Alinha o texto à esquerda */
+  display: block; /* altera o display para block que ocupa toda a largura */
+  margin-bottom: 0px; /* altera a distância entre os elementos */
+  color: #6363639d;
 }
 
 .inputGroup input,
 .inputGroup select {
-  width: 100%;
-  padding: 10px;
-  border-radius: 30px;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
-  margin-top: 0px;
+  width: 100%; /* altera a largura do input */
+  padding: 10px; /* altera o padding do input */
+  border-radius: 30px; /* altera o raio da borda do input */
+  background-color: #fff; /* Alterado para branco */
+  border: 1px solid #6363639d; /* Adiciona borda ao input */
+  box-sizing: border-box; /* Adicionado para incluir padding e borda no tamanho total */
+  margin-top: 0px; /* altera a distância entre os elementos */
 }
 
