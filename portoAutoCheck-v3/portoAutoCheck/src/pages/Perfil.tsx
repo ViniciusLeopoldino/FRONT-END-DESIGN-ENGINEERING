@@ -1,8 +1,10 @@
 import React from 'react';
 import Button from '../components/Button/Button';
+import Footer from '../components/Footer/Footer';
 
 const Perfil: React.FC = () => {
   return (
+    <>
     <div>
       <h1>Perfil</h1>
       <div>
@@ -10,6 +12,8 @@ const Perfil: React.FC = () => {
         <Button onClick={() => alert('Editar')}>Editar</Button>
       </div>
     </div>
+    <Footer />
+    </>
   );
 };
 

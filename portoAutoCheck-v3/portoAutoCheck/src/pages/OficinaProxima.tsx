@@ -1,7 +1,9 @@
 import React from 'react';
+import Footer from '../components/Footer/Footer';
 
 const OficinaProxima: React.FC = () => {
   return (
+    <>
     <div>
       <h1>Oficina Mais Próxima</h1>
       <form>
@@ -19,6 +21,9 @@ const OficinaProxima: React.FC = () => {
       ></iframe>
       <button onClick={() => alert('Carregando GPS...')}>GPS</button>
     </div>
+    <Footer />
+    </>
+    
   );
 };
 

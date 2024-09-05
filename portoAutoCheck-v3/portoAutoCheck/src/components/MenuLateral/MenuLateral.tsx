@@ -14,8 +14,9 @@ const MenuLateral: React.FC = () => {
         <li><Link to="/manutencao">Manutenção</Link></li>
         <li><Link to="/oficina-proxima">Oficina Próxima</Link></li>
         <li><Link to="/fale-conosco">Fale Conosco</Link></li>
-        <li><Link to="/integrantes">Integrantes</Link></li>
         <li><Link to="/">Sair</Link></li>
+        <br></br>
+        <li><Link to="/integrantes">Integrantes</Link></li>
       </ul>
     </nav>
   );
