@@ -11,6 +11,7 @@ const MenuLateral: React.FC = () => {
       </div>
       <ul className={styles.menuItems}>
         <li><Link to="/perfil">Perfil</Link></li>
+        <li><Link to="/porto-auto-check">Porto Auto Check</Link></li>
         <li><Link to="/manutencao">Manutenção</Link></li>
         <li><Link to="/oficina-proxima">Oficina Próxima</Link></li>
         <li><Link to="/fale-conosco">Fale Conosco</Link></li>

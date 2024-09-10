@@ -9,6 +9,7 @@ import FaleConosco from '../pages/FaleConosco';
 import IntegrantesPage from '../pages/Integrantes';
 import ResetSenha from '../pages/ResetSenha';
 import Registro from '../pages/Registro';
+import PortoAutoCheck from '../pages/PortoAutoCheck';
 
 const AppRoutes: React.FC = () => {
   return (
@@ -16,6 +17,7 @@ const AppRoutes: React.FC = () => {
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/perfil" element={<Layout><Perfil /></Layout>} />
+        <Route path="/porto-auto-check" element={<Layout><PortoAutoCheck /></Layout>} />
         <Route path="/manutencao" element={<Layout><Manutencao /></Layout>} />
         <Route path="/oficina-proxima" element={<Layout><OficinaProxima /></Layout>} />
         <Route path="/fale-conosco" element={<Layout><FaleConosco /></Layout>} />
