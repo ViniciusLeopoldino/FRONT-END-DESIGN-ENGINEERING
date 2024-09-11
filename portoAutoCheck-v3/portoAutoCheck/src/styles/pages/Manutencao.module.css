@@ -1,41 +1,40 @@
 .main {
-    padding: 20px;
-    background-color: #f4f4f4;
-  }
-  
-  .container {
-    background-color: #fff;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .maintenanceInfo {
-    margin-bottom: 20px;
-  }
-  
-  .scheduleSection {
-    margin-top: 20px;
-  }
-  
-  .scheduleForm {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .scheduleForm label {
-    margin-bottom: 5px;
-    font-weight: bold;
-  }
-  
-  .scheduleForm select {
-    margin-bottom: 15px;
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-  }
-  
-  .scheduleForm button {
-    align-self: flex-start;
-  }
-  
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+.container {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.maintenance-info {
+  margin-bottom: 20px;
+}
+
+.schedule-section {
+  margin-top: 20px;
+}
+
+.schedule-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.schedule-form label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.schedule-form select {
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.schedule-form button {
+  align-self: flex-start;
+}

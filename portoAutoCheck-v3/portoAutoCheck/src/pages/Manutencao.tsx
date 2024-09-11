@@ -3,7 +3,7 @@ import Header from '../components/Header/Header';
 import Footer from '../components/Footer/Footer';
 import Button from '../components/Button/Button';
 import styles from '../styles/pages/Manutencao.module.css';
-
+import { useEffect } from 'react';
 const Manutencao: React.FC = () => {
   const [selectedMaintenance, setSelectedMaintenance] = useState('');
   const [selectedDate, setSelectedDate] = useState('');
@@ -15,6 +15,11 @@ const Manutencao: React.FC = () => {
   const handleDateChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
     setSelectedDate(event.target.value);
   };
+
+  useEffect(() => {
+    // Code to run on component mount or when selectedMaintenance or selectedDate changes
+    // Add your logic here
+  }, [selectedMaintenance, selectedDate]);
 
   return (
     <>
@@ -38,14 +43,12 @@ const Manutencao: React.FC = () => {
                 <option value="pastilha">Pastilha de Freio</option>
                 <option value="cambio">Câmbio</option>
                 <option value="oleo">Óleo</option>
-                {/* Adicione outras opções conforme necessário */}
               </select>
               <label htmlFor="date">Data:</label>
               <select id="date" value={selectedDate} onChange={handleDateChange}>
                 <option value="">Selecione</option>
                 <option value="01/12/2024">01/12/2024</option>
                 <option value="15/12/2024">15/12/2024</option>
-                {/* Adicione outras datas conforme necessário */}
               </select>
               <Button type="submit">Agendar</Button>
             </form>

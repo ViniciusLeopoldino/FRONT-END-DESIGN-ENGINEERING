@@ -8,7 +8,7 @@
   padding: 20px; /* Espaçamento interno */
   border-radius: 20px; /* Borda arredondada */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra */
-  width: 100%; /* Ajuste para não ultrapassar o menu lateral */
+  width: 900px; /* Ajuste para não ultrapassar o menu lateral */
   /* max-width: 100%; Garante que ele nunca ultrapasse a largura da tela */
   /* margin: 20px auto; Centraliza o container */
   /* height: calc(100vh - 40px); Altura total da viewport menos margem */

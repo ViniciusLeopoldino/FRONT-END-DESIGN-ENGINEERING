@@ -14,6 +14,7 @@ const PortoAutoCheck: React.FC = () => {
           <h2>Autoatendimento</h2>
           <div className={styles.buttons}>
             <Button>Iniciar Autodiagnóstico</Button>
+            <br />
             <Button>Iniciar Auto Orçamento</Button>
           </div>
         </section>
@@ -23,5 +24,6 @@ const PortoAutoCheck: React.FC = () => {
     </>
   );
 };
+
 
 export default PortoAutoCheck;
