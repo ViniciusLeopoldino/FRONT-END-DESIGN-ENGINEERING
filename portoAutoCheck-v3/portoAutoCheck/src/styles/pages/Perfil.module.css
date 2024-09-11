@@ -1,73 +1,72 @@
-/* Container principal da página Perfil */
+/* Ajusta o container principal para ocupar a tela toda */
 .container {
-    display: flex; /* Alinha o menu lateral e o conteúdo principal horizontalmente */
-    flex-direction: column; /* Alinha o menu lateral e o conteúdo principal verticalmente */
-    align-items: center; /* Alinha o conteúdo no centro */
-    justify-content: flex-start; /* Alinha o conteúdo no topo */
-    background-color: white; /* Cor de fundo */
-    padding: 20px; /* Espaçamento interno */
-    border-radius: 20px;    /* Borda arredondada */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra */
-    width: calc(100vh - 250px); /* Ajusta a largura para ocupar o espaço disponível, considerando uma margem para o menu lateral */
-    max-width: 100%; /* Limita a largura máxima */
-    margin: 20px ; /* Centraliza o container horizontalmente */
-    height: calc(100vh - 40px); /* Ajusta a altura para ocupar toda a viewport menos o padding do container */
-    box-sizing: border-box; /* Garante que o padding e a borda sejam incluídos no cálculo da largura e altura */
-  }
-  
-  /* Se precisar ajustar o tamanho, você pode usar uma largura fixa */
+  display: flex; /* Flexbox para centralizar o conteúdo */
+  flex-direction: column; /* Alinha os itens verticalmente */
+  /* align-items: center; Centraliza os itens horizontalmente */
+  /* justify-content: flex-start; Alinha os itens no topo */
+  background-color: white; /* Cor de fundo */
+  padding: 20px; /* Espaçamento interno */
+  border-radius: 20px; /* Borda arredondada */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra */
+  width: 100%; /* Ajuste para não ultrapassar o menu lateral */
+  /* max-width: 100%; Garante que ele nunca ultrapasse a largura da tela */
+  /* margin: 20px auto; Centraliza o container */
+  /* height: calc(100vh - 40px); Altura total da viewport menos margem */
+  /* box-sizing: border-box; Inclui padding e borda no cálculo da largura */
+}
 
-  .container-fixed {
-    height: 100vh; /* Ajusta a altura para ocupar toda a viewport */
-    width: 100vh; /* Definindo uma largura fixa para melhor controle */
-    margin: 20px auto; /* Centraliza o container horizontalmente */
-  }
-  
-  .formGroup {
-    width: 100%; /* Ocupa toda a largura disponível */
-    margin-bottom: 20px; /* Espaçamento inferior */
-  }
-  
-  h2 {
-    margin-top: 20px;   /* Espaçamento superior */
-  }
-  
-  p {
-    margin-bottom: 10px;
-  }
-  
-  input {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 10px;
-    border-radius: 10px;
-    border: 1px solid #ccc;
-    box-sizing: border-box; /* Garante que o padding e a borda sejam incluídos no cálculo da largura */
-  }
+/* Ajuste dos grupos de inputs */
+.inputGroup {
+  width: 100%; /* Ocupa toda a largura do container */
+  margin-bottom: 20px; /* Espaçamento inferior */ 
+}
 
+/* Títulos */
+h2 {
+  margin-top: 20px; /* Espaçamento superior */
+}
 
-  button {
-    margin-top: 20px;
-  }
-  
+/* Estilo dos parágrafos e inputs para manter a aparência de campos */
+p {
+  margin-bottom: 10px; /* Espaçamento inferior */
+  width: 100%; /* Ocupa toda a largura do container */
+  padding: 8px; /* Espaçamento interno */
+  border-radius: 10px; /* Borda arredondada */
+  border: 1px solid #ccc; /* Borda fina */
+  background-color: #f9f9f9; /* Cor de fundo leve para simular input */
+  box-sizing: border-box; /* Inclui padding e borda no cálculo da largura */
+}
 
+/* Estilo dos inputs no modo de edição */
+input {
+  width: 100%; /* Ocupa toda a largura do container */
+  padding: 8px; /* Espaçamento interno */
+  margin-bottom: 10px; /* Espaçamento inferior */
+  border-radius: 10px; /* Borda arredondada */
+  border: 1px solid #ccc; /* Borda fina */
+  box-sizing: border-box; /* Inclui padding e borda no cálculo da largura */
+}
 
+/* Botão de edição */
+button {
+  margin-top: 20px; /* Espaçamento superior */
+}
 
+/* Estilo dos labels e inputs dentro do grupo */
+.inputGroup label {
+  text-align: left; /* Alinha o texto à esquerda */
+  display: block; /* Exibe o label em uma linha separada */
+  margin-bottom: 5px; /* Espaçamento inferior */
+  color: #6363639d; /* Cor do texto */
+}
 
-  .inputGroup label {
-    text-align: left; /* Alinha o texto à esquerda */
-    display: block; /* altera o display para block que ocupa toda a largura */
-    margin-bottom: 0px; /* altera a distância entre os elementos */
-    color: #6363639d;
-  }
-  
-  .inputGroup input,
-  .inputGroup select {
-    width: 100%; /* altera a largura do input */
-    padding: 10px; /* altera o padding do input */
-    border-radius: 30px; /* altera o raio da borda do input */
-    background-color: #fff; /* Alterado para branco */
-    border: 1px solid #6363639d; /* Adiciona borda ao input */
-    box-sizing: border-box; /* Adicionado para incluir padding e borda no tamanho total */
-    margin-top: 0px; /* altera a distância entre os elementos */
-  }
+.inputGroup input,
+.inputGroup select {
+  width: 100%; /* Ocupa toda a largura do container */
+  padding: 10px; /* Espaçamento interno */
+  border-radius: 30px; /* Borda arredondada */
+  background-color: #fff; /* Cor de fundo */
+  border: 1px solid #6363639d; /* Borda fina */
+  box-sizing: border-box; /* Inclui padding e borda no cálculo da largura */
+  margin-top: 5px; /* Espaçamento superior */
+}

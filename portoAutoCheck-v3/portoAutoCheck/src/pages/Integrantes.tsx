@@ -31,7 +31,7 @@ const integrantesData = [
 const IntegrantesPage: React.FC = () => {
   return (
     <>
-      <Header />
+      <Header title='Integrantes'/>
       <main className={styles.main}>
         <Integrantes integrantes={integrantesData} />
       </main>

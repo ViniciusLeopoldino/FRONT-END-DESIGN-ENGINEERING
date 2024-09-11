@@ -1,11 +1,12 @@
 import React from 'react';
 import Footer from '../components/Footer/Footer';
+import Header from '../components/Header/Header';
 
 const OficinaProxima: React.FC = () => {
   return (
     <>
+    <Header title="Oficina Próxima" />
     <div>
-      <h1>Oficina Mais Próxima</h1>
       <form>
         <label htmlFor="cep">Digite seu CEP:</label>
         <input type="text" id="cep" name="cep" />

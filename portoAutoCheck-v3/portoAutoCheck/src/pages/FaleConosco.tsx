@@ -3,6 +3,7 @@ import Form from '../components/Form/Form';
 import Input from '../components/Input/Input';
 import Button from '../components/Button/Button';
 import Footer from '../components/Footer/Footer';
+import Header from '../components/Header/Header';
 
 const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
   event.preventDefault();
@@ -12,8 +13,8 @@ const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
 const FaleConosco: React.FC = () => {
   return (
     <>
+    <Header title="Fale Conosco" />
     <div>
-      <h1>Fale Conosco</h1>
       <Form onSubmit={handleSubmit}>
         <Input type="text" id="nome" name="nome" placeholder="Nome" />
         <Input type="email" id="email" name="email" placeholder="E-mail" />

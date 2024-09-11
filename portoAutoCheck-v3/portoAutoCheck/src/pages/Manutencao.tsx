@@ -18,10 +18,9 @@ const Manutencao: React.FC = () => {
 
   return (
     <>
-      <Header />
+      <Header title='Manutenções'/>
       <main className={styles.main}>
         <section className={styles.container}>
-          <h2>Manutenções</h2>
           <div className={styles.maintenanceInfo}>
             <h3>Última manutenção</h3>
             <p>Pastilha de Freio | Data: 09/01/2024</p>

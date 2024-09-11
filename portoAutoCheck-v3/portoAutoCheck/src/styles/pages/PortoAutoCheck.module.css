@@ -1,0 +1,15 @@
+.container {
+    display: flex; /* Flexbox para centralizar o conteúdo */
+    flex-direction: column; /* Alinha os itens verticalmente */
+    /* align-items: center; Centraliza os itens horizontalmente */
+    /* justify-content: flex-start; Alinha os itens no topo */
+    background-color: white; /* Cor de fundo */
+    padding: 20px; /* Espaçamento interno */
+    border-radius: 20px; /* Borda arredondada */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra */
+    width: 100%; /* Ajuste para não ultrapassar o menu lateral */
+    /* max-width: 100%; Garante que ele nunca ultrapasse a largura da tela */
+    /* margin: 20px auto; Centraliza o container */
+    /* height: calc(100vh - 40px); Altura total da viewport menos margem */
+    /* box-sizing: border-box; Inclui padding e borda no cálculo da largura */
+  }

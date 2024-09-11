@@ -7,16 +7,18 @@ import styles from '../styles/pages/PortoAutoCheck.module.css';
 const PortoAutoCheck: React.FC = () => {
   return (
     <>
-      <Header />
+      <Header title="Porto Auto Check" />
+      <div className={styles.container}>
       <main className={styles.main}>
         <section className={styles.section}>
           <h2>Autoatendimento</h2>
           <div className={styles.buttons}>
-            <Button href="/auto-diag.html">Iniciar Autodiagnóstico</Button>
-            <Button href="/auto-orc.html">Iniciar Auto Orçamento</Button>
+            <Button>Iniciar Autodiagnóstico</Button>
+            <Button>Iniciar Auto Orçamento</Button>
           </div>
         </section>
       </main>
+      </div>
       <Footer />
     </>
   );

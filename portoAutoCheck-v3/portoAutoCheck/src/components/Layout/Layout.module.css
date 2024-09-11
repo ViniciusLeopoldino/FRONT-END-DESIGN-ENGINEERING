@@ -6,7 +6,7 @@
     flex-grow: 1; /* Faz com que o conteúdo principal ocupe o espaço restante */
     margin-left: 200px; /* Compensa a largura do menu lateral */
     padding: 0px; /* Espaçamento interno */
-    flex: 1; /* Faz com que o conteúdo principal ocupe o espaço restante */
-    overflow: y; /* Adiciona uma barra de rolagem vertical */
+    flex: 0; /* Faz com que o conteúdo principal ocupe o espaço restante */
+    /* overflow-y: auto; Adiciona uma barra de rolagem vertical */
   }
   

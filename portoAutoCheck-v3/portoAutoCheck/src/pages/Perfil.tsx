@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Header from '../components/Header/Header';
 import Button from '../components/Button/Button';
 import Footer from '../components/Footer/Footer';
 import styles from '../styles/pages/Perfil.module.css';
@@ -22,7 +23,8 @@ const Perfil: React.FC = () => {
 
   return (
     <>
-    <h1>Perfil</h1>
+    <Header title="Perfil" /> 
+    
       <div className={styles.container}>
         
         <div className={styles.inputGroup}>
