@@ -46,6 +46,7 @@
   left: 20px;
   z-index: 1000;
   cursor: pointer;
+  
 }
 
 .hamburger span {
@@ -54,7 +55,7 @@
   height: 4px;
   margin: 6px auto;
   background-color: #fff;
-  border: 1px solid;
+  border: 1px solid #30C5FF;
 }
 
 /* Responsividade */
