@@ -1,1 +1,0 @@
-Aplicação para automação de atendimento e resolução de problemas automotivos.
