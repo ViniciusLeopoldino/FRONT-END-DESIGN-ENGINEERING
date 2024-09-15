@@ -12,7 +12,7 @@ const Login: React.FC = () => {
 
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    // Lógica para autenticação aqui, se necessário
+    
     navigate('/perfil'); // Redireciona para a página de menu após o login
   };
 

@@ -23,5 +23,6 @@
   }
 }
 
-
-
+p, h3{
+  color: black; /* Cor do texto */
+}

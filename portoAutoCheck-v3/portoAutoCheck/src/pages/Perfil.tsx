@@ -35,7 +35,7 @@ const Perfil: React.FC = () => {
           <p>Telefone: {isEditing ? <input name="telefone" value={userData.telefone} onChange={handleChange} /> : userData.telefone}</p>
           <p>CEP: {isEditing ? <input name="cep" value={userData.cep} onChange={handleChange} /> : userData.cep}</p>
         </div>
-        <div className={styles.inputGroup2}>  
+        <div className={styles.inputGroup}>  
           <h2>Dados do Veículo</h2>
           <p>Modelo: {isEditing ? <input name="modelo" value={userData.modelo} onChange={handleChange} /> : userData.modelo}</p>
           <p>Ano: {isEditing ? <input name="ano" value={userData.ano} onChange={handleChange} /> : userData.ano}</p>

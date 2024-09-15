@@ -44,28 +44,15 @@ p {
   box-sizing: border-box;
 }
 
+
 /* Estilo dos inputs no modo de edição */
 input {
-  width: 100%;
-  padding: 8px;
-  margin-bottom: 10px;
-  border-radius: 10px;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
+  color: black;
 }
 
 /* Botão de edição */
 button {
   margin-top: 20px;
-}
-
-/* Estilo dos labels e inputs dentro do grupo */
-.inputGroup label {
-  border-radius: 50px;
-  text-align: left;
-  display: block;
-  margin-bottom: 5px;
-  color: #6363639d;
 }
 
 .inputGroup input,
@@ -78,4 +65,3 @@ button {
   box-sizing: border-box;
   margin-top: 5px;
 }
-
