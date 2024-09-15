@@ -20,11 +20,39 @@
   }
 }
 
+/* Adicional: Estilização dos selects específicos na página de manutenção */
+.scheduleForm select {
+  padding: 10px 30px;
+  background-color: #30C5FF;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  text-decoration: none;
+  margin: 5px;
+}
+
+.scheduleForm select:focus {
+  padding: 10px 30px;
+  background-color: #30C5FF;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  text-decoration: none;
+  margin: 5px;
+}
+
+ p {
+  margin-top: 0;
+  border-radius: 30px;
+}
+
 h3{
   margin-top: 20px;
   text-align: left;
 }
-
+/*
 .maintenance-info {
   margin-bottom: 20px;
 }
@@ -52,4 +80,4 @@ h3{
 
 .schedule-form button {
   align-self: flex-start;
-}
+} */

@@ -4,6 +4,7 @@ import Footer from '../components/Footer/Footer';
 import Button from '../components/Button/Button';
 import styles from '../styles/pages/Manutencao.module.css';
 import { useEffect } from 'react';
+
 const Manutencao: React.FC = () => {
   const [selectedMaintenance, setSelectedMaintenance] = useState('');
   const [selectedDate, setSelectedDate] = useState('');
@@ -40,15 +41,17 @@ const Manutencao: React.FC = () => {
               <label htmlFor="maintenance">Tipo de Manutenção:</label>
               <select id="maintenance" value={selectedMaintenance} onChange={handleMaintenanceChange}>
                 <option value="">Selecione</option>
-                <option value="pastilha">Pastilha de Freio</option>
-                <option value="cambio">Câmbio</option>
-                <option value="oleo">Óleo</option>
+                <option value="preventiva">Preventiva</option>
+                <option value="corretiva">Corretiva</option>
               </select>
               <label htmlFor="date">Data:</label>
               <select id="date" value={selectedDate} onChange={handleDateChange}>
                 <option value="">Selecione</option>
-                <option value="01/12/2024">01/12/2024</option>
-                <option value="15/12/2024">15/12/2024</option>
+                <option value="01">Segunda</option>
+                <option value="02">Terça</option>
+                <option value="03">Quarta</option>
+                <option value="04">Quinta</option>
+                <option value="05">Sexta</option>
               </select>
               <Button type="submit">Agendar</Button>
             </form>

@@ -24,7 +24,7 @@ const Perfil: React.FC = () => {
 
   return (
     <>
-    <Header title="" /> 
+    <Header title="Perfil" /> 
     
       <div className={styles.container}>
         

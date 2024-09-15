@@ -24,6 +24,7 @@ const Login: React.FC = () => {
   };
 
   return (
+    <>
     <div className={styles.container}>
       <header className={styles.header}>
         <img src={loginImage} alt="Login" className={styles.loginImage} />
@@ -49,6 +50,7 @@ const Login: React.FC = () => {
         </Form>
       </main>
     </div>
+    </>
   );
 };
 

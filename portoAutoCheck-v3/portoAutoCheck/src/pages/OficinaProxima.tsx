@@ -3,6 +3,7 @@ import Footer from '../components/Footer/Footer';
 import Header from '../components/Header/Header';
 import styles from '../styles/pages/OficinaProxima.module.css';
 import Button from '../components/Button/Button';
+import Input from '../components/Input/Input';
 
 const OficinaProxima: React.FC = () => {
   return (
@@ -11,7 +12,7 @@ const OficinaProxima: React.FC = () => {
     <div className={styles.container}>
       <form>
         <label htmlFor="cep">Digite seu CEP:</label>
-        <input type="text" id="cep" name="cep" />
+        <Input type="text" id="cep" name="cep" />
         <Button type="submit">Pesquisar</Button>
       </form>
       <iframe
