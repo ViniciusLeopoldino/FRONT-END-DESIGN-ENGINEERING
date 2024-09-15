@@ -6,6 +6,7 @@ import Button from '../components/Button/Button';
 import Form from '../components/Form/Form';
 import Input from '../components/Input/Input';
 
+
 const Login: React.FC = () => {
   const navigate = useNavigate();
 
@@ -33,7 +34,7 @@ const Login: React.FC = () => {
         <Form onSubmit={handleSubmit}>
           <div className={styles.inputGroup}>
             <label htmlFor="username">Usuário:</label>
-            <Input id="username" name="username" placeholder='email@email.com.br' />
+            <Input id="username" name="username" placeholder='email@email.com.br'/>
             {/* <input type="text" id="username" name="username" /> */}
           </div>
           <div className={styles.inputGroup}>

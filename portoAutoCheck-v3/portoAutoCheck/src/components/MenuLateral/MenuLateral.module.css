@@ -4,7 +4,7 @@
   left: 0;
   width: 250px;
   height: 100vh;
-  background-color: #30C5FF;
+  background-color: #00a1fc;
   color: #fff;
   display: flex;
   flex-direction: column;
@@ -55,7 +55,7 @@
   height: 4px;
   margin: 6px auto;
   background-color: #fff;
-  border: 1px solid #30C5FF;
+  border: 1px solid #00a1fc;
 }
 
 /* Responsividade */

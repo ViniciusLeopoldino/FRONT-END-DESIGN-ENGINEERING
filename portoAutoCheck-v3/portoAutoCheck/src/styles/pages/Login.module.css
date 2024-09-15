@@ -9,7 +9,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background-image: linear-gradient(rgb(255, 255, 255), #30C5FF);
+  background-color: #00a1fc;
   align-items: center;
   justify-content: center;
 }
@@ -23,7 +23,9 @@ body {
   width: 100%;
   max-width: 500px;
   margin: auto;
+
 }
+
 
 .inputGroup {
   margin-bottom: 30px;
@@ -31,15 +33,15 @@ body {
 }
 
 .inputGroup label {
-  text-align: left;
+  text-align: center;
   display: block;
-  margin-bottom: 0px;
-  color: #6363639d;
+  margin-bottom: 5px;
+  color: #000;
 }
 
 .inputGroup input,
 .inputGroup select {
-  width: 100%;
+  width: 80%;
   padding: 10px;
   border-radius: 30px;
   background-color: #fff;

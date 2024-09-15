@@ -9,7 +9,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background-image: linear-gradient(rgb(255, 255, 255), #30C5FF);
+  background-color:#00a1fc;
   align-items: center;
   justify-content: center;
 }
@@ -26,7 +26,7 @@ body {
 }
 
 h1 {
-  color: #30C5FF;
+  color: #00a1fc;
 }
 
 .inputGroup {
