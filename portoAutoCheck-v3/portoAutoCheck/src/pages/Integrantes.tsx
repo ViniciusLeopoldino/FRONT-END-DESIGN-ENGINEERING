@@ -8,6 +8,7 @@ import image2 from '../assets/Pablo.jpeg';
 import image3 from '../assets/Vinicius.jpg';
 
 
+  
 const integrantesData = [
   {
     name: 'Diego Santos',

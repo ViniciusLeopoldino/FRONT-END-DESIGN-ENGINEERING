@@ -1,12 +1,21 @@
-.container {
-    display: flex; /* Alinha o menu lateral e o conteúdo principal horizontalmente */
-  }
-  
-  .mainContent {
-    flex-grow: 1; /* Faz com que o conteúdo principal ocupe o espaço restante */
-    margin-left: 200px; /* Compensa a largura do menu lateral */
-    padding: 0px; /* Espaçamento interno */
-    flex: 0; /* Faz com que o conteúdo principal ocupe o espaço restante */
-    /* overflow-y: auto; Adiciona uma barra de rolagem vertical */
-  }
+/* Layout.module.css */
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  height: 100%; /* Certifica-se de que o root ocupe toda a tela */
+  width: 100%;
+}
+
+.pageContent {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
   

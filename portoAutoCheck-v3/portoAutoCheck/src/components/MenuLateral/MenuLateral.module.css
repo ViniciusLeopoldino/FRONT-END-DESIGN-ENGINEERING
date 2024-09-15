@@ -2,25 +2,25 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 200px;
+  width: 250px;
   height: 100vh;
   background-color: #30C5FF;
   color: #fff;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   padding: 20px;
-  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+  z-index: 1000;
 }
 
-.logo {
-  margin-bottom: 20px;
+
+.menuLateral.open {
+  transform: translateX(0); /* Quando o menu está aberto */
 }
 
 .menuItems {
   list-style-type: none;
   padding: 0;
-  margin-bottom: auto;
   margin-top: 50px;
 }
 
@@ -36,5 +36,39 @@
 
 .menuItems a:hover {
   text-decoration: none;
+}
+
+/* Estilo do ícone do menu hambúrguer */
+.hamburger {
+  display: none; /* Escondido por padrão */
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+.hamburger span {
+  display: block;
+  width: 35px;
+  height: 4px;
+  margin: 6px auto;
+  background-color: #fff;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .menuLateral {
+    width: 250px;
+    transform: translateX(-100%); /* Esconde o menu inicialmente */
+  }
+
+  .menuLateral.open {
+    transform: translateX(0); /* Exibe o menu no clique */
+  }
+
+  .hamburger {
+    display: block; /* Exibe o ícone do menu hambúrguer */
+  }
 }
 

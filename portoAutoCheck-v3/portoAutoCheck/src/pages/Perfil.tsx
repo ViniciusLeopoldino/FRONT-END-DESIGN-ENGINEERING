@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Header from '../components/Header/Header';
 import Button from '../components/Button/Button';
 import Footer from '../components/Footer/Footer';
+// import Form from '../components/Form/Form';
 import styles from '../styles/pages/Perfil.module.css';
 
 const Perfil: React.FC = () => {
@@ -9,7 +10,7 @@ const Perfil: React.FC = () => {
   const [userData, setUserData] = useState({
     nome: 'João da Silva',
     cpf: '132.123.321-10',
-    telefone: '(11) 9 78762-300',
+    telefone: '(11) 9 7876-2300',
     cep: '03044-051',
     modelo: 'Fiat Fastback',
     ano: '2024',
@@ -23,7 +24,7 @@ const Perfil: React.FC = () => {
 
   return (
     <>
-    <Header title="Perfil" /> 
+    <Header title="" /> 
     
       <div className={styles.container}>
         
@@ -33,13 +34,14 @@ const Perfil: React.FC = () => {
           <p>CPF: {isEditing ? <input name="cpf" value={userData.cpf} onChange={handleChange} /> : userData.cpf}</p>
           <p>Telefone: {isEditing ? <input name="telefone" value={userData.telefone} onChange={handleChange} /> : userData.telefone}</p>
           <p>CEP: {isEditing ? <input name="cep" value={userData.cep} onChange={handleChange} /> : userData.cep}</p>
-
+        </div>
+        <div className={styles.inputGroup2}>  
           <h2>Dados do Veículo</h2>
           <p>Modelo: {isEditing ? <input name="modelo" value={userData.modelo} onChange={handleChange} /> : userData.modelo}</p>
           <p>Ano: {isEditing ? <input name="ano" value={userData.ano} onChange={handleChange} /> : userData.ano}</p>
           <p>Placa: {isEditing ? <input name="placa" value={userData.placa} onChange={handleChange} /> : userData.placa}</p>
           <p>Cor: {isEditing ? <input name="cor" value={userData.cor} onChange={handleChange} /> : userData.cor}</p>
-        </div>
+        </div> 
 
         <Button onClick={() => setIsEditing(!isEditing)}>
           {isEditing ? 'Salvar' : 'Editar'}

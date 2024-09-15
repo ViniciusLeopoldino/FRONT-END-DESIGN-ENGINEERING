@@ -4,5 +4,15 @@
     text-align: center;
     margin-top: 200px; 
     color: black;
+    margin-left: 200px; /*Espaço reservado para o menu lateral*/
+    width: calc(100% - 200px); /*O container ocupa o restante da tela*/
+    min-height: 50%; /* Garante que o container ocupe toda a altura da tela */
   }
   
+  @media (max-width: 768px) {
+    .footer {
+      margin-left: 0;
+      width: 100%; /* Ocupa 100% da largura em telas menores */
+      min-height: auto; /* Ajusta a altura automaticamente para telas menores */
+    }
+  }

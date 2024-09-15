@@ -1,10 +1,11 @@
 .header {
-  background-color: #f8f9fa00; /* Cor de fundo do header */
-  padding: 20px;
-  text-align: center;
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 200px;
+  padding: 20px 0;
 }
 
 .header h1 {
   font-size: 40px;
-  color: #30c5ff; /* Cor do texto */
+  color: #30C5FF; /* Cor do texto */
 }
