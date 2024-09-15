@@ -24,14 +24,14 @@ O projeto Porto Auto Check é uma aplicação de autoatendimento para serviços 
 
 ## Uso
 
-# Navegação
+### Navegação
 
 - Ao abrir o sistema, a página principal exibe as opções de autodiagnóstico e auto-orçamento.
 - Ao clicar em "Iniciar Autodiagnóstico", um chatbot será iniciado para guiar o usuário através de perguntas sobre o veículo.
 - Ao clicar em "Iniciar Auto-Orçamento", outro chatbot será iniciado para calcular os custos de peças de acordo com as informações fornecidas pelo usuário.
 - O menu lateral contém links para páginas como Perfil, Histórico de Manutenções, e outras funcionalidades.
 
-# Componentes Personalizados
+### Componentes Personalizados
 
 O projeto contém componentes reutilizáveis, como:
 
@@ -39,7 +39,7 @@ O projeto contém componentes reutilizáveis, como:
 - Header e Footer: Componentes que encapsulam o cabeçalho e rodapé da aplicação.
 - Chatbot: Um componente dinâmico que simula uma interface de chatbot para interação com os usuários.
 
-# Estilo
+### Estilo
 
 Todo o estilo do projeto foi feito utilizando CSS Modules, garantindo isolamento de estilos para evitar conflitos entre componentes.
 
