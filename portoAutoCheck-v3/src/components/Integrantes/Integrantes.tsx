@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './Integrantes.module.css';
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
 interface IntegranteProps {
   name: string;

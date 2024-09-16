@@ -6,8 +6,7 @@ import styles from '../styles/pages/Integrantes.module.css';
 import image from '../assets/Diego.jpeg';
 import image2 from '../assets/Pablo.jpeg';
 import image3 from '../assets/Vinicius.jpg';
-
-
+import '@fortawesome/fontawesome-free/css/all.min.css';
   
 const integrantesData = [
   {
