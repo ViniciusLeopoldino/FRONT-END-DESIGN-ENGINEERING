@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import styles from './Chatbot.module.css';
 
+// Futuramente, o componente Chatbot será um chatbot funcional que interage com o usuário e responde perguntas sobre o veículo do usuário.
+
 interface ChatbotProps {
   title: string;
   questions: string[];

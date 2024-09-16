@@ -18,8 +18,9 @@ const Manutencao: React.FC = () => {
   };
 
   useEffect(() => {
-    // Code to run on component mount or when selectedMaintenance or selectedDate changes
-    // Add your logic here
+    // console.log(selectedMaintenance, selectedDate);
+    // console.log('Manutenção agendada com sucesso!');
+    // console.log('Manutenção não agendada!');
   }, [selectedMaintenance, selectedDate]);
 
   return (
@@ -29,10 +30,10 @@ const Manutencao: React.FC = () => {
         <section className={styles.container}>
           <div className={styles.maintenanceInfo}>
             <h3>Última manutenção</h3>
-            <p>Pastilha de Freio | Data: 09/01/2024</p>
+            <p>Item: Pastilha de Freio | Data: 09/01/2024</p>
             <p>Quilometragem: 15.000 | Tipo: Corretiva</p>
             <h3>Próxima manutenção</h3>
-            <p>Câmbio | Data: 01/11/2024</p>
+            <p>Item: Câmbio | Data: 01/11/2024</p>
             <p>Quilometragem: 20.000 | Tipo: Preventiva</p>
           </div>
           <section className={styles.scheduleSection}>

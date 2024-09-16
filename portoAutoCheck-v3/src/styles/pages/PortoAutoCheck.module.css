@@ -1,5 +1,5 @@
 .container {
-  display: flex; /* Flexbox para layout */
+  display: flex; /* Layout flexível */
   flex-direction: column; /* Layout vertical */
   background-color: white; /* Cor de fundo */
   color: black; /* Cor do texto */
@@ -7,9 +7,7 @@
   border-radius: 20px; /* Bordas arredondadas */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra */
   margin-left: 200px; /* Espaço reservado para o menu lateral */
-  width: calc(100% - 200px); /* Largura ajustada para o espaço do menu lateral */
-  min-height: 50%; /* Altura mínima */
-  box-sizing: border-box; /* Inclui padding e border na largura e altura */
+  /* box-sizing: border-box; Inclui padding e border na largura e altura */
 }
 
 @media (max-width: 768px) {
