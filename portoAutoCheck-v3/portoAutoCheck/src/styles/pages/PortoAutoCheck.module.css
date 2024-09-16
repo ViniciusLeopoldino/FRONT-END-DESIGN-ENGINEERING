@@ -1,5 +1,3 @@
-
-/* Container principal do componente */
 .container {
   display: flex; /* Flexbox para layout */
   flex-direction: column; /* Layout vertical */

@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import Form from '../components/Form/Form';
 import Input from '../components/Input/Input';
 import Button from '../components/Button/Button';
-import styles from '../styles/pages/ResetSenha.module.css'; // Adicione este arquivo CSS para estilização
+import styles from '../styles/pages/InitialStyles.module.css'; 
 
 const ResetSenha: React.FC = () => {
   const navigate = useNavigate();

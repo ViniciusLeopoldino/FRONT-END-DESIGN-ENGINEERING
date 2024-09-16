@@ -1,11 +1,10 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import styles from '../styles/pages/Login.module.css';
+import styles from '../styles/pages/InitialStyles.module.css';
 import loginImage from '../components/img/Logo_PortoSeguro.svg'; 
 import Button from '../components/Button/Button';
 import Form from '../components/Form/Form';
 import Input from '../components/Input/Input';
-
 
 const Login: React.FC = () => {
   const navigate = useNavigate();
