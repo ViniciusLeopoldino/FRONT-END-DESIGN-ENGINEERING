@@ -17,6 +17,7 @@ const FaleConosco: React.FC = () => {
     <div className={styles.container}>
       <div>
         <Input type="text" id="nome" name="nome" placeholder="Nome" />
+        <br />
         <Input type="email" id="email" name="email" placeholder="E-mail" />
         <textarea id="mensagem" name="mensagem" placeholder="Deixe sua mensagem" />
         <Button type="submit">Enviar</Button>
