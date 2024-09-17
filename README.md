@@ -18,8 +18,8 @@ O projeto Porto Auto Check é uma aplicação de autoatendimento para serviços 
 ## Instalação
 
 1. Clone o repositório do PortoAutoCheck.
-2. Navegue até o diretório do projeto.
-3. Execute o comando `npm install` para instalar as dependências.
+2. Navegue até o diretório do projeto portoAutoCheck-v3.
+3. Execute o comando `npm install vite@latest` para instalar as dependências.
 4. Execute o comando `npm run dev` para iniciar a aplicação.
 
 ## Uso
