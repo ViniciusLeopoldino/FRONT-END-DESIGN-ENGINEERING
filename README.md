@@ -1,7 +1,7 @@
 
 # Projeto PortoAutoCheck
 
-Este é o README do projeto PortoAutoCheck, um sistema de verificação automática de veículos no Porto.
+Este é o README do projeto PortoAutoCheck, um sistema de verificação automática de veículos.
 
 ## Descrição
 
